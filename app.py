@@ -33,12 +33,12 @@ if nim:
             course = row["Matakuliah"]
             st.markdown(f"### {course}")
             
-            q1 = st.selectbox("1. Dosen menguasai materi pembelajaran dengan baik dan mudah dipahami, menggunakan sumber-sumber referensi terbaru serta mengembangkan gagasan baru/inovatif",options=["Isi 1–5", 1, 2, 3, 4, 5],index=0,key=f"{course}_q1")
-            q2 = st.selectbox("2. Dosen menyampaikan materi kuliah secara sistematis dan mudah diikuti",options=["Isi 1–5", 1, 2, 3, 4, 5],index=0,key=f"{course}_q2")
-            q3 = st.selectbox("3. Dosen menggunakan media pembelajaran dengan tepat dan menarik",options=["Isi 1–5", 1, 2, 3, 4, 5],index=0,key=f"{course}_q3")
-            q4 = st.selectbox("4. Dosen membuka ruang diskusi dan interaksi dengan mahasiswa selama perkuliahan",options=["Isi 1–5", 1, 2, 3, 4, 5],index=0,key=f"{course}_q4")
-            q5 = st.selectbox("5. Dosen memberikan umpan balik yang membangun terhadap hasil kerja mahasiswa",options=["Isi 1–5", 1, 2, 3, 4, 5],index=0,key=f"{course}_q5")
-            q6 = st.selectbox("6. Secara umum, proses pembelajaran pada mata kuliah ini berjalan dengan baik",options=["Isi 1–5", 1, 2, 3, 4, 5],index=0,key=f"{course}_q6")
+            q1 = st.selectbox("1. Dosen menguasai materi pembelajaran dengan baik dan mudah dipahami, menggunakan sumber-sumber referensi terbaru serta mengembangkan gagasan baru/inovatif",options=[1, 2, 3, 4, 5],index=0,key=f"{course}_q1")
+            q2 = st.selectbox("2. Dosen menyampaikan materi kuliah secara sistematis dan mudah diikuti",options=[1, 2, 3, 4, 5],index=0,key=f"{course}_q2")
+            q3 = st.selectbox("3. Dosen menggunakan media pembelajaran dengan tepat dan menarik",options=[1, 2, 3, 4, 5],index=0,key=f"{course}_q3")
+            q4 = st.selectbox("4. Dosen membuka ruang diskusi dan interaksi dengan mahasiswa selama perkuliahan",options=[1, 2, 3, 4, 5],index=0,key=f"{course}_q4")
+            q5 = st.selectbox("5. Dosen memberikan umpan balik yang membangun terhadap hasil kerja mahasiswa",options=[1, 2, 3, 4, 5],index=0,key=f"{course}_q5")
+            q6 = st.selectbox("6. Secara umum, proses pembelajaran pada mata kuliah ini berjalan dengan baik",options=[1, 2, 3, 4, 5],index=0,key=f"{course}_q6")
 
             # cols = st.columns(6)
             
