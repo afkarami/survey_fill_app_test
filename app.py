@@ -38,7 +38,11 @@ if nim:
                               index=0,
                               key=f"{course}_q1"
                              )
-            q2 = st.selectbox("2. Dosen menyampaikan materi kuliah secara sistematis dan mudah diikuti",options=[1, 2, 3, 4, 5],index=0,key=f"{course}_q2")
+            q2 = st.selectbox("2. 2. Dosen menyampaikan materi kuliah secara sistematis dan mudah diikuti",
+                              options=[1, 2, 3, 4, 5],
+                              index=0,
+                              key=f"{course}_q2"
+                             )
             q3 = st.selectbox("3. Dosen menggunakan media pembelajaran dengan tepat dan menarik",options=[1, 2, 3, 4, 5],index=0,key=f"{course}_q3")
             q4 = st.selectbox("4. Dosen membuka ruang diskusi dan interaksi dengan mahasiswa selama perkuliahan",options=[1, 2, 3, 4, 5],index=0,key=f"{course}_q4")
             q5 = st.selectbox("5. Dosen memberikan umpan balik yang membangun terhadap hasil kerja mahasiswa",options=[1, 2, 3, 4, 5],index=0,key=f"{course}_q5")
