@@ -89,5 +89,5 @@ if nim:
                 st.success("Data berhasil dikirim!")
             else:
                 st.error("Gagal mengirim data.")
-        else:
-            st.warning("NIM tidak ditemukan dalam database.")
+else:
+    st.warning("NIM tidak ditemukan dalam database.")
