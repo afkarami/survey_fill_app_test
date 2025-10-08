@@ -3,7 +3,7 @@ import pandas as pd
 import requests
 
 # --- CONFIG ---
-DATABASE_SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-XXX/pub?gid=0&single=true&output=csv"  # your database CSV link
+DATABASE_SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTMvqtDGEsFiviYP0gOt-4oX0lgNj0y-kXtGxWrSqh0L1hBQ8XwZlUS6wtbUegI6RPmihvYkiVTeDtE/pub?gid=0&single=true&output=csv"  # your database CSV link
 SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwVUFmjJP-N-w8XOyQI6Kc_nKzbjWwNXZddgZChPiyRzIDliL0-hvP9zAoy4SrIXf8/exec"  # your Apps Script URL
 
 # --- APP START ---
