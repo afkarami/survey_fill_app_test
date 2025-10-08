@@ -13,7 +13,7 @@ st.title("Survey Kepuasan Mahasiswa")
 def load_database():
     df = pd.read_csv(DATABASE_SHEET_URL)
     df['NIM'] = df['NIM'].astype(str).str.strip()
-    df['Mata Kuliah'] = df['Mata Kuliah'].astype(str).str.strip()
+    df['Matakuliah'] = df['Matakuliah'].astype(str).str.strip()
     return df
 
 nim = st.text_input("Masukkan NIM Anda:")
