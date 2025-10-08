@@ -52,8 +52,8 @@ if nim:
             # q4 = cols[3].number_input(f"Q4", 1, 5, 3, key=f"{course}_q4")
             # q5 = cols[4].number_input(f"Q5", 1, 5, 3, key=f"{course}_q5")
             # q6 = cols[5].number_input(f"Q6", 1, 5, 3, key=f"{course}_q6")
-
-            survey_data.append({
+        
+        survey_data.append({
                 "nim": nim,
                 "mataKuliah": course,
                 "q1": q1,
