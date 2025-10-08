@@ -35,7 +35,7 @@ if nim:
             cols = st.columns(6)
 
             # Start with blank values (None)
-            q1 = cols[0].number_input("Q1", 1, 5, key=f"{course}_q1", value=None, placeholder="Isi 1–5")
+            q1 = cols[0].number_input("1. 1. Dosen menguasai materi pembelajaran dengan baik dan mudah dipahami, menggunakan sumber-sumber referensi terbaru serta mengembangkan gagasan baru/inovatif", 1, 5, key=f"{course}_q1", value=None, placeholder="Isi 1–5")
             q2 = cols[1].number_input("Q2", 1, 5, key=f"{course}_q2", value=None, placeholder="Isi 1–5")
             q3 = cols[2].number_input("Q3", 1, 5, key=f"{course}_q3", value=None, placeholder="Isi 1–5")
             q4 = cols[3].number_input("Q4", 1, 5, key=f"{course}_q4", value=None, placeholder="Isi 1–5")
