@@ -31,7 +31,7 @@ if nim:
 
         for _, row in student_courses.iterrows():
             course = row["Matakuliah"]
-            st.markdown(f"### {course}")
+            st.markdown(f"<h3 style='color:#2E86C1'>{course}</h3>", unsafe_allow_html=True)
             
             q1 = st.selectbox("1. Dosen menguasai materi pembelajaran dengan baik dan mudah dipahami, menggunakan sumber-sumber referensi terbaru serta mengembangkan gagasan baru/inovatif",options=[1, 2, 3, 4, 5],index=0,key=f"{course}_q1")
             q2 = st.selectbox("2. Dosen menyampaikan materi kuliah secara sistematis dan mudah diikuti",options=[1, 2, 3, 4, 5],index=0,key=f"{course}_q2")
