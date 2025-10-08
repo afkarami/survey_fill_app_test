@@ -32,12 +32,12 @@ if nim:
             course = row["Matakuliah"]
             st.markdown(f"### {course}")
             cols = st.columns(6)
-            q1 = cols[0].number_input(f"Q1 ({course})", 1, 5, 3, key=f"{course}_q1")
-            q2 = cols[1].number_input(f"Q2 ({course})", 1, 5, 3, key=f"{course}_q2")
-            q3 = cols[2].number_input(f"Q3 ({course})", 1, 5, 3, key=f"{course}_q3")
-            q4 = cols[3].number_input(f"Q4 ({course})", 1, 5, 3, key=f"{course}_q4")
-            q5 = cols[4].number_input(f"Q5 ({course})", 1, 5, 3, key=f"{course}_q5")
-            q6 = cols[5].number_input(f"Q6 ({course})", 1, 5, 3, key=f"{course}_q6")
+            q1 = cols[0].number_input(f"Q1", 1, 5, 3, key=f"{course}_q1")
+            q2 = cols[1].number_input(f"Q2", 1, 5, 3, key=f"{course}_q2")
+            q3 = cols[2].number_input(f"Q3", 1, 5, 3, key=f"{course}_q3")
+            q4 = cols[3].number_input(f"Q4", 1, 5, 3, key=f"{course}_q4")
+            q5 = cols[4].number_input(f"Q5", 1, 5, 3, key=f"{course}_q5")
+            q6 = cols[5].number_input(f"Q6", 1, 5, 3, key=f"{course}_q6")
 
             survey_data.append({
                 "nim": nim,
