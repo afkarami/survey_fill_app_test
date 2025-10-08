@@ -74,7 +74,7 @@ if nim:
                     st.success("Data berhasil dikirim!")
                 else:
                 st.error("Gagal mengirim data.")
-        else:
+            else:
             st.warning("NIM tidak ditemukan dalam database.")
 
 # # Submission button
