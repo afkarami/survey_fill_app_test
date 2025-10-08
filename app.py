@@ -29,7 +29,7 @@ if nim:
         survey_data = []
 
         for _, row in student_courses.iterrows():
-            course = row["Mata Kuliah"]
+            course = row["Matakuliah"]
             st.markdown(f"### {course}")
             cols = st.columns(6)
             q1 = cols[0].number_input(f"Q1 ({course})", 1, 5, 3, key=f"{course}_q1")
