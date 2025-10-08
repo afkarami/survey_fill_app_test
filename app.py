@@ -66,15 +66,15 @@ if nim:
                 "q6": q6
             })
 
-        if not all_filled:
-            st.warning("Harap isi semua pertanyaan sebelum mengirim.")
-            st.button("Kirim Semua",disabled=True)
-        else:
-            if st.button("Kirim Semua"):
-                res = requests.post(SCRIPT_URL, json=survey_data)
-                if res.status_code == 200 and "OK" in res.text:
-                    st.success("Data berhasil dikirim!")
-                else:
-                    st.error("Gagal mengirim data.")
+     if not all_filled:
+         st.warning("Harap isi semua pertanyaan sebelum mengirim.")
+        st.button("Kirim Semua",disabled=True)
+     else:
+          if st.button("Kirim Semua"):
+             res = requests.post(SCRIPT_URL, json=survey_data)
+              if res.status_code == 200 and "OK" in res.text:
+                 st.success("Data berhasil dikirim!")
             else:
-                st.warning("NIM tidak ditemukan dalam database.")
+                st.error("Gagal mengirim data.")
+         else:
+             st.warning("NIM tidak ditemukan dalam database.")
