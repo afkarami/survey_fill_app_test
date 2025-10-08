@@ -34,7 +34,7 @@ if nim:
             st.markdown(f"<h3 style='color:#2E86C1'>{course}</h3>", unsafe_allow_html=True)
             
             q1 = st.selectbox("1. Dosen menguasai materi pembelajaran dengan baik dan mudah dipahami, menggunakan sumber-sumber referensi terbaru serta mengembangkan gagasan baru/inovatif",
-                              options=[1, 2, 3, 4, 5],
+                              options=["-", 1, 2, 3, 4, 5],
                               index=0,
                               key=f"{course}_q1"
                              )
@@ -65,10 +65,10 @@ if nim:
                              )
 
             # Check if any question is left blank
-    if None in (q1, q2, q3, q4, q5, q6):
-        all_filled = False
+        if None in (q1, q2, q3, q4, q5, q6):
+            all_filled = False
         
-        survey_data.append({
+            survey_data.append({
                 "nim": nim,
                 "mataKuliah": course,
                 "q1": q1,
