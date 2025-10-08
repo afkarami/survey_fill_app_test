@@ -33,61 +33,36 @@ if nim:
             course = row["Matakuliah"]
             st.markdown(f"<h3 style='color:#2E86C1'>{course}</h3>", unsafe_allow_html=True)
             
-            questions = [
-                "1. Dosen menguasai materi pembelajaran dengan baik dan mudah dipahami, menggunakan sumber-sumber referensi terbaru serta mengembangkan gagasan baru/inovatif",
-                "2. Dosen menyampaikan materi kuliah secara sistematis dan mudah diikuti",
-                "3. Dosen menggunakan media pembelajaran dengan tepat dan menarik",
-                "4. Dosen membuka ruang diskusi dan interaksi dengan mahasiswa selama perkuliahan",
-                "5. Dosen memberikan umpan balik yang membangun terhadap hasil kerja mahasiswa",
-                "6. Secara umum, proses pembelajaran pada mata kuliah ini berjalan dengan baik"
-            ]
-            
-            survey_data_course = {}
-            for i, q_text in enumerate(questions, start=1):
-                survey_data_course[f"q{i}"] = st.selectbox(
-                    q_text,
-                    options=["-", 1, 2, 3, 4, 5],
-                    index=0,  # default to "-"
-                    key=f"{course}_q{i}"
-                )
-
-            # Later, when appending data:
-            survey_data.append({
-                "nim": nim,
-                "mataKuliah": course,
-                **survey_data_course
-            })
-            
-            # q1 = st.selectbox("1. Dosen menguasai materi pembelajaran dengan baik dan mudah dipahami, menggunakan sumber-sumber referensi terbaru serta mengembangkan gagasan baru/inovatif",
-            #                   options=[1, 2, 3, 4, 5],
-            #                   index=0,
-            #                   key=f"{course}_q1"
-            #                  )
-            # q2 = st.selectbox("2. Dosen menyampaikan materi kuliah secara sistematis dan mudah diikuti",
-            #                   options=[1, 2, 3, 4, 5],
-            #                   index=0,
-            #                   key=f"{course}_q2"
-            #                  )
-            # q3 = st.selectbox("3. Dosen menggunakan media pembelajaran dengan tepat dan menarik",
-            #                   options=[1, 2, 3, 4, 5],
-            #                   index=0,
-            #                   key=f"{course}_q3"
-            #                  )
-            # q4 = st.selectbox("4. Dosen membuka ruang diskusi dan interaksi dengan mahasiswa selama perkuliahan",
-            #                   options=[1, 2, 3, 4, 5],
-            #                   index=0,
-            #                   key=f"{course}_q4"
-            #                  )
-            # q5 = st.selectbox("5. Dosen memberikan umpan balik yang membangun terhadap hasil kerja mahasiswa",
-            #                   options=[1, 2, 3, 4, 5],
-            #                   index=0,
-            #                   key=f"{course}_q5"
-            #                  )
-            # q6 = st.selectbox("6. Secara umum, proses pembelajaran pada mata kuliah ini berjalan dengan baik",
-            #                   options=[1, 2, 3, 4, 5],
-            #                   index=0,
-            #                   key=f"{course}_q6"
-            #                  )
+            q1 = st.selectbox("1. Dosen menguasai materi pembelajaran dengan baik dan mudah dipahami, menggunakan sumber-sumber referensi terbaru serta mengembangkan gagasan baru/inovatif",
+                              options=[1, 2, 3, 4, 5],
+                              index=0,
+                              key=f"{course}_q1"
+                             )
+            q2 = st.selectbox("2. Dosen menyampaikan materi kuliah secara sistematis dan mudah diikuti",
+                              options=[1, 2, 3, 4, 5],
+                              index=0,
+                              key=f"{course}_q2"
+                             )
+            q3 = st.selectbox("3. Dosen menggunakan media pembelajaran dengan tepat dan menarik",
+                              options=[1, 2, 3, 4, 5],
+                              index=0,
+                              key=f"{course}_q3"
+                             )
+            q4 = st.selectbox("4. Dosen membuka ruang diskusi dan interaksi dengan mahasiswa selama perkuliahan",
+                              options=[1, 2, 3, 4, 5],
+                              index=0,
+                              key=f"{course}_q4"
+                             )
+            q5 = st.selectbox("5. Dosen memberikan umpan balik yang membangun terhadap hasil kerja mahasiswa",
+                              options=[1, 2, 3, 4, 5],
+                              index=0,
+                              key=f"{course}_q5"
+                             )
+            q6 = st.selectbox("6. Secara umum, proses pembelajaran pada mata kuliah ini berjalan dengan baik",
+                              options=[1, 2, 3, 4, 5],
+                              index=0,
+                              key=f"{course}_q6"
+                             )
 
             # Check if any question is left blank
     if None in (q1, q2, q3, q4, q5, q6):
