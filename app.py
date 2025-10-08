@@ -73,9 +73,9 @@ if nim:
                 if res.status_code == 200 and "OK" in res.text:
                     st.success("Data berhasil dikirim!")
                 else:
-                st.error("Gagal mengirim data.")
+                    st.error("Gagal mengirim data.")
             else:
-            st.warning("NIM tidak ditemukan dalam database.")
+                st.warning("NIM tidak ditemukan dalam database.")
 
 # # Submission button
 #             if not all_filled:
